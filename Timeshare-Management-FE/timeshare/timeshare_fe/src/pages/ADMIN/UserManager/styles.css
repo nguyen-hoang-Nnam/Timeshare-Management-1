@@ -1,0 +1,18 @@
+.wrap-page {
+  padding: 20px 30px 20px 0px;
+}
+.title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.ant-modal-title {
+  line-height: 1.5;
+  font-size: 22px;
+  text-align: center;
+}
+
+.ant-table-thead > .ant-table-cell {
+  background: #e4effe;
+  color: #212529;
+}

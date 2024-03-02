@@ -1,0 +1,96 @@
+.timeshare-header {
+  text-align: center;
+  font-size: 24px;
+  color: #962222;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.secContent.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.singleDestination {
+  width: 300px;
+  margin: 3% auto;
+  text-align: center;
+  box-shadow: 0 0.0714285714rem 0.2142857143rem 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 20px 4px;
+  min-height: 24rem;
+  max-height: 320px;
+}
+
+.secContent.grid .imageDiv img {
+  width: 280px;
+  height: 200px;
+}
+
+.cardInfo {
+  text-align: left;
+  padding: 0 10px;
+}
+
+.cardInfo .desc {
+  margin: 12px 0;
+}
+
+.cardBody-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grade span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardInfo .btn.flex {
+  background-color: #0091b3;
+  border-color: #00748f;
+  color: #fff !important;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 8px;
+  width: 100%;
+}
+
+.secTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.search-bar {
+  width: 200px;
+  height: 32px;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.search-icon {
+  font-size: 20px;
+  margin-left: -28px;
+  color: #ccc;
+}

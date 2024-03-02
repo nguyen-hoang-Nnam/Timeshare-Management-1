@@ -1,0 +1,19 @@
+.timeshare-form-container {
+  max-width: 600px;
+  margin: auto;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #972417;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: pulse 1s infinite;
+}
