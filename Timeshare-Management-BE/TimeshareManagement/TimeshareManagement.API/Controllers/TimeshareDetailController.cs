@@ -73,7 +73,7 @@ namespace TimeshareManagement.API.Controllers
         {
             try
             {
-                if (timeshareDetail == null)
+                /*if (timeshareDetail == null)
                 {
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare Detail object is null." });
                 }
@@ -86,7 +86,7 @@ namespace TimeshareManagement.API.Controllers
                 else
                 {
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare Detail object is null." });
-                }
+                }*/
 
                 await _timeshareDetailRepository.Create(timeshareDetail);
                 return Ok(new ResponseDTO { Result = timeshareDetail, IsSucceed = true, Message = "Create Timeshare Detail successfully" });
@@ -111,7 +111,7 @@ namespace TimeshareManagement.API.Controllers
                 {
                     existingTimeshareDetail.Image = timeshareDetail.Image;
                     existingTimeshareDetail.Detail = timeshareDetail.Detail;
-                    existingTimeshareDetail.timeshareId = timeshareDetail.timeshareId;
+                    /*existingTimeshareDetail.timeshareId = timeshareDetail.timeshareId;*/
                    
                     await _timeshareDetailRepository.Update(timeshareDetail);
                 }

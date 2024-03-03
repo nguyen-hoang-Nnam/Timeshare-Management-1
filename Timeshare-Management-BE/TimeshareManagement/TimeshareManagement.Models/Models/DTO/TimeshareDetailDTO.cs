@@ -13,6 +13,6 @@ namespace TimeshareManagement.Models.Models.DTO
         public string? Image { get; set; }
         public string? Detail { get; set; }
         
-        public TimeshareDTO? Timeshare { get; set; }
+        /*public TimeshareDTO? Timeshare { get; set; }*/
     }
 }
