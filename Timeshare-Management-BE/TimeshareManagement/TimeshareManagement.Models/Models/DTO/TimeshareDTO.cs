@@ -13,8 +13,7 @@ namespace TimeshareManagement.Models.Models.DTO
         public string? Image { get; set; }
         public int Price { get; set; }
         public string? Address { get; set; }
-        /*public DateTime? Checkin { get; set; }
-        public DateTime? Checkout { get; set; }*/
+        public string? Detail {  get; set; }
         public TimeshareStatusDTO? TimeshareStatus { get; set; }
         public PlaceDTO? Place { get; set; }
         /*public string? Id { get; set; }
