@@ -16,7 +16,6 @@ namespace TimeshareManagement.Models.Models.DTO
         public string? Detail {  get; set; }
         public TimeshareStatusDTO? TimeshareStatus { get; set; }
         public PlaceDTO? Place { get; set; }
-        /*public string? Id { get; set; }
-        public UserDTO? User { get; set; }*/
+        public int? confirmTimeshare { get; set; }
     }
 }

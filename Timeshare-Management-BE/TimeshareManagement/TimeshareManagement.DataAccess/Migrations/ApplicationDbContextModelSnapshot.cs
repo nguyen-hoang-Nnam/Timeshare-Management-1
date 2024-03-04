@@ -300,6 +300,9 @@ namespace TimeshareManagement.DataAccess.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
+                    b.Property<int?>("confirmTimeshare")
+                        .HasColumnType("int");
+
                     b.Property<int?>("placeId")
                         .HasColumnType("int");
 

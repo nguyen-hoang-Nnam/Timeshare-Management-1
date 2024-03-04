@@ -380,6 +380,22 @@
   },
   {
     "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "ConfirmTimeshare",
+    "RelativePath": "api/timeshare/ConfirmTimeshare",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "timeshareId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
     "Method": "CreateTimeshare",
     "RelativePath": "api/timeshare/CreateTimeshare",
     "HttpMethod": "POST",
