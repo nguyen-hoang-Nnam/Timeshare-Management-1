@@ -82,7 +82,7 @@ namespace TimeshareManagement.API.Controllers
                 {
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
                 }
-
+                timeshare.confirmTimeshare = 0;
                 IEnumerable<Place> places = _placeRepository.GetAllItem();
                 if (timeshare.Place != null)
                 {
@@ -102,7 +102,7 @@ namespace TimeshareManagement.API.Controllers
                 }
 
                 await _timeshareRepository.Create(timeshare);
-                return Ok(new ResponseDTO { Result = timeshare, IsSucceed = true, Message = "Create Timeshare successfully" });
+                return Ok(new ResponseDTO { Result = timeshare, IsSucceed = true, Message = "Create Timeshare successfully. Awaiting confirmation." });
             }
             catch(Exception ex)
             {
@@ -177,6 +177,26 @@ namespace TimeshareManagement.API.Controllers
             {
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
             }
+        }
+        [HttpPost]
+        [Route("ConfirmTimeshare")]
+        public async Task<IActionResult> ConfirmTimeshare(int timeshareId)
+        {
+            try
+            {
+                Timeshare timeshare = await _timeshareRepository.GetById(timeshareId);
+                if (timeshare == null)
+                {
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found"});
+                }
+                timeshare.confirmTimeshare = 1;
+                await _timeshareRepository.Update(timeshare);
+                return Ok(new ResponseDTO { Result = timeshare, IsSucceed = false, Message = "Timeshare confirmed successfully" });
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            } 
         }
     }
 }

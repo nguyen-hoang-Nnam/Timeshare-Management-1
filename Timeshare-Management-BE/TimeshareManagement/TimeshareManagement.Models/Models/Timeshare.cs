@@ -26,9 +26,7 @@ namespace TimeshareManagement.Models.Models
         public int? placeId { get; set; }
         [ForeignKey("placeId")]
         public Place? Place { get; set; }
-        /*public string? Id { get; set; }
-        [ForeignKey("Id")]
-        public ApplicationUser? User { get; set; }*/
+        public int? confirmTimeshare {  get; set; }
 
     }
 }
